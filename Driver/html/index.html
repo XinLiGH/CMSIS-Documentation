@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Overview</title>
-<title>CMSIS-Driver: Overview</title>
+<title>概观</title>
+<title>CMSIS-Driver: 概观</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="cmsis.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="jquery.js"></script>
@@ -32,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="CMSIS_Logo_Final.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CMSIS-Driver
-   &#160;<span id="projectnumber">Version 2.6.0</span>
+   &#160;<span id="projectnumber">版本 2.6.0</span>
    </div>
-   <div id="projectbrief">Peripheral Interface for Middleware and Application Code</div>
+   <div id="projectbrief">中间件和应用程序代码的外设接口</div>
   </td>
  </tr>
  </tbody>
@@ -56,9 +56,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Usage&#160;and&#160;Description</span></a></li>
-      <li><a href="modules.html"><span>Reference</span></a></li>
+      <li class="current"><a href="index.html"><span>主&#160;页</span></a></li>
+      <li><a href="pages.html"><span>用法&#160;和&#160;描述</span></a></li>
+      <li><a href="modules.html"><span>参考</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('index.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>所有</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文档</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>页</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,42 +108,42 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Overview </div>  </div>
+<div class="title">概观</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The CMSIS-Driver specification is a software API that describes peripheral driver interfaces for middleware stacks and user applications. The CMSIS-Driver API is designed to be generic and independent of a specific RTOS making it reusable across a wide range of supported microcontroller devices. The CMSIS-Driver API covers a wide range of use cases for the supported peripheral types, but can not take every potential use-case into account. Over time, it is indented to extend the CMSIS-Driver API with further groups to cover new use-cases.</p>
-<p>The CMSIS Software Pack publishes the API Interface under the Component Class <b>CMSIS</b> <b>Driver</b> with header files and a documentation. These header files are the reference for the implementation of the standardized peripheral driver interfaces. These implementations are published typically in the Device Family Pack of a related microcontroller family under the Component Class <b>CMSIS</b> <b>Driver</b>. A Device Family Pack may contain additional interfaces in the Component Class <b>Device</b> to extend the standard Peripheral Drivers covered by this CMSIS-Driver specification with additional device specific interfaces for example for Memory BUS, GPIO, or DMA.</p>
-<p>The standard peripheral driver interfaces connect microcontroller peripherals for example with middleware that implements communication stacks, file systems, or graphic user interfaces. Each peripheral driver interface may provide multiple instances reflecting the multiple physical interfaces of the same type in a device. For example the two physical SPI interfaces are reflected with a separate <a class="el" href="theoryOperation.html#AccessStruct">Access Struct</a> for SPI1 and SPI2. The <a class="el" href="theoryOperation.html#AccessStruct">Access Struct</a> is the interface of a driver to the middleware component or the user application.</p>
+<div class="textblock"><p>CMSIS驱动程序规范是一个软件API，描述中间件协议栈和用户应用程序的外围驱动程序接口。CMSIS驱动程序API被设计为通用的，并且独立于特定的RTOS，使其可在各种支持的微控制器器件上重复使用。CMSIS驱动程序API涵盖了支持的外设类型的各种用例，但不能考虑每个潜在的用例。随着时间的推移，它将扩展CMSIS驱动程序API和其他组以覆盖新的使用案例。</p>
+<p>CMSIS软件包使用头文件和文档在组件类<b>CMSIS</b> <b>驱动程序</b>下发布API接口。这些头文件是实现标准化外设驱动程序接口的参考。这些实现通常在组件类<b> CMSIS </b> <b>驱动程序</b>下的相关微控制器系列的器件系列包中发布。 设备系列包可以在组件类<b>设备</b>中包含其他接口，以扩展此CMSIS驱动程序规范所涵盖的标准外围驱动程序，并为其他设备指定接口，例如内存总线，GPIO或DMA。</p>
+<p>标准外设驱动器接口将微控制器外设与例如实现通信协议栈，文件系统或图形用户界面的中间件连接。每个外设驱动程序接口可以提供反映设备中相同类型的多个物理接口的多个实例。例如，两个物理SPI接口用于SPI1和SPI2的单独<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>反映。<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>是驱动程序与中间件组件或用户应用程序的接口。</p>
 <div class="image">
 <img src="Driver.png" alt="Driver.png"/>
 <div class="caption">
-Peripheral Driver Interfaces and Middleware</div></div>
-<p> The following CMSIS-Driver API groups are defined:</p>
+外设驱动程序接口和中间件</div></div>
+<p>定义了以下CMSIS驱动程序API组：</p>
 <ul>
-<li><a class="el" href="group__can__interface__gr.html">CAN</a>: Interface to CAN bus peripheral.</li>
-<li><a class="el" href="group__eth__interface__gr.html">Ethernet</a>: Interface to Ethernet MAC and PHY peripheral.</li>
-<li><a class="el" href="group__i2c__interface__gr.html">I2C</a>: Multi-master Serial Single-Ended Bus interface driver.</li>
-<li><a class="el" href="group__mci__interface__gr.html">MCI</a>: Memory Card Interface for SD/MMC memory.</li>
-<li><a class="el" href="group__nand__interface__gr.html">NAND</a>: NAND Flash Memory interface driver.</li>
-<li><a class="el" href="group__flash__interface__gr.html">Flash</a>: Flash Memory interface driver.</li>
-<li><a class="el" href="group__sai__interface__gr.html">SAI</a>: Serial audio interface driver (I2s, PCM, AC'97, TDM, MSB/LSB Justified).</li>
-<li><a class="el" href="group__spi__interface__gr.html">SPI</a>: Serial Peripheral Interface Bus driver.</li>
-<li><a class="el" href="group__storage__interface__gr.html">Storage</a>: Storage device interface driver.</li>
-<li><a class="el" href="group__usart__interface__gr.html">USART</a>: Universal Synchronous and Asynchronous Receiver/Transmitter interface driver.</li>
-<li><a class="el" href="group__usb__interface__gr.html">USB</a>: Interface driver for USB Host and USB Device communication.</li>
+<li><a class="el" href="group__can__interface__gr.html">CAN</a>: 与CAN总线外设的接口。</li>
+<li><a class="el" href="group__eth__interface__gr.html">Ethernet</a>: 以太网MAC和PHY外设的接口。</li>
+<li><a class="el" href="group__i2c__interface__gr.html">I2C</a>: 多主串行单端总线接口驱动程序。</li>
+<li><a class="el" href="group__mci__interface__gr.html">MCI</a>: 用于SD/MMC存储器的存储卡接口。</li>
+<li><a class="el" href="group__nand__interface__gr.html">NAND</a>: NAND闪存接口驱动程序。</li>
+<li><a class="el" href="group__flash__interface__gr.html">Flash</a>: 闪存接口驱动程序。</li>
+<li><a class="el" href="group__sai__interface__gr.html">SAI</a>: 串行音频接口驱动器（I2s，PCM，AC'97，TDM，MSB/LSB Justified）。</li>
+<li><a class="el" href="group__spi__interface__gr.html">SPI</a>: 串行外设接口总线驱动程序。</li>
+<li><a class="el" href="group__storage__interface__gr.html">Storage</a>: 存储设备接口驱动。</li>
+<li><a class="el" href="group__usart__interface__gr.html">USART</a>: 通用同步和异步接收器/发送器接口驱动程序。</li>
+<li><a class="el" href="group__usb__interface__gr.html">USB</a>: USB主机和USB设备通信的接口驱动程序。</li>
 </ul>
 <hr/>
 <h2>CMSIS-Driver in ARM::CMSIS Pack </h2>
-<p>The following files relevant to CMSIS-Driver are present in the <b>ARM::CMSIS</b> Pack directories: </p>
+<p>以下与CMSIS驱动程序相关的文件存在于<b>ARM::CMSIS</b>包目录中：</p>
 <table class="doxtable">
 <tr>
-<th>Directory </th><th>Content  </th></tr>
+<th>目录</th><th>内容</th></tr>
 <tr>
-<td><b>CMSIS/Documentation/Driver</b> </td><td>This documentation </td></tr>
+<td><b>CMSIS/Documentation/Driver</b> </td><td>本文档</td></tr>
 <tr>
-<td><b>CMSIS/Driver/Include</b> </td><td>Driver header files (Driver_<em>interface</em>.h, <a class="el" href="Driver__Common_8h.html">Driver_Common.h</a>) </td></tr>
+<td><b>CMSIS/Driver/Include</b> </td><td>驱动程序头文件(Driver_<em>interface</em>.h, <a class="el" href="Driver__Common_8h.html">Driver_Common.h</a>) </td></tr>
 <tr>
-<td><b>CMSIS/Driver/DriverTemplates</b> </td><td>Driver implementation template files (Driver_<em>interface</em>.c) </td></tr>
+<td><b>CMSIS/Driver/DriverTemplates</b> </td><td>驱动程序实现模板文件(Driver_<em>interface</em>.c) </td></tr>
 </table>
 <hr/>
  </div></div><!-- contents -->
@@ -151,7 +151,7 @@ Peripheral Driver Interfaces and Middleware</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 22 2018 11:58:38 for CMSIS-Driver by Arm Ltd. All rights reserved.
+    <li class="footer">由Arm有限公司于2000年2月22日星期四11:58:38为CMSIS驱动程序生成。保留所有权利。
 	<!--
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 
