@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('group__common__drv__gr.html','');});
 <a href="#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
-Content</h2></td></tr>
+内容</h2></td></tr>
 <tr class="memitem:group__execution__status"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__execution__status.html">状态错误代码</a></td></tr>
 <tr class="memdesc:group__execution__status"><td class="mdescLeft">&#160;</td><td class="mdescRight">函数的负面返回值表示执行期间发生的错误。<br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,17 +158,17 @@ Content</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>驱动版本。</p>
-<p>每个CMSIS驱动程序的访问结构都提供<b>GetVersion</b>函数，它在结构<a class="el" href="group__common__drv__gr.html#structARM__DRIVER__VERSION" title="Driver Version. ">ARM_DRIVER_VERSION</a>中返回：</p>
+<p>每个 CMSIS 驱动程序的访问结构都提供 <b>GetVersion</b> 函数，它在结构 <a class="el" href="group__common__drv__gr.html#structARM__DRIVER__VERSION" title="Driver Version. ">ARM_DRIVER_VERSION</a> 中返回：</p>
 <ul>
-<li>API版本，这是用于实现此驱动程序的CMSIS驱动程序规范的版本。</li>
+<li>API 版本，这是用于实现此驱动程序的 CMSIS 驱动程序规范的版本。</li>
 <li>驱动程序版本，它是实际驱动程序实现的源代码版本。</li>
 </ul>
-<p>该版本被编码为16位无符号值（uint16_t），其中：</p>
+<p>该版本被编码为 16 位无符号值（uint16_t），其中：</p>
 <ul>
 <li>高字节：主要版本。</li>
 <li>低字节：次要版本。</li>
 </ul>
-<p>例如，版本1.12编码为0x10C。</p>
+<p>例如，版本 1.12 编码为 0x10C。</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">数据字段</th></tr>
 <tr><td class="fieldtype">
@@ -176,7 +176,7 @@ Content</h2></td></tr>
 <td class="fieldname">
 api</td>
 <td class="fielddoc">
-API版本。</td></tr>
+API 版本。</td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="adcd153bc4507926c792e86ebe74e6455"></a>uint16_t</td>
 <td class="fieldname">
@@ -199,7 +199,7 @@ drv</td>
 </div><div class="memdoc">
 
 <p>一般电源状态。 </p>
-<p>每个CMSIS驱动程序的访问结构都提供了<b>PowerControl</b>函数，它使用参数<a class="el" href="group__common__drv__gr.html#ga47d6d7c31f88f3b8ae4aaf9d8444afa5">ARM_POWER_STATE</a>处理外设的电源配置文件。根据此参数，外设将全速运行，仅检测事件或完全断电。</p>
+<p>每个 CMSIS 驱动程序的访问结构都提供了 <b>PowerControl</b> 函数，它使用参数 <a class="el" href="group__common__drv__gr.html#ga47d6d7c31f88f3b8ae4aaf9d8444afa5">ARM_POWER_STATE</a> 处理外设的电源配置文件。根据此参数，外设将全速运行，仅检测事件或完全断电。</p>
 <p>有关更多信息，请参阅<a class="el" href="theoryOperation.html#CallSequence">函数调用序列</a>。</p>
 <table class="fieldtable">
 <tr><th colspan="2">枚举</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ga47d6d7c31f88f3b8ae4aaf9d8444afa5ab6f5becc85ebd51c3dd2524a95d2ca35"></a>ARM_POWER_OFF</em>&#160;</td><td class="fielddoc">
@@ -220,7 +220,7 @@ drv</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">由Arm Ltd.于2012年2月22日11:58:36为CMSIS驱动程序生成。保留所有权利。
+    <li class="footer">由 Arm Ltd.于 2012 年 2 月 22 日 11:58:36 为 CMSIS 驱动程序生成。保留所有权利。
 	<!--
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 

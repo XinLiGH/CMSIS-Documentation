@@ -111,30 +111,30 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">概观</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>CMSIS驱动程序规范是一个软件API，描述中间件协议栈和用户应用程序的外围驱动程序接口。CMSIS驱动程序API被设计为通用的，并且独立于特定的RTOS，使其可在各种支持的微控制器器件上重复使用。CMSIS驱动程序API涵盖了支持的外设类型的各种用例，但不能考虑每个潜在的用例。随着时间的推移，它将扩展CMSIS驱动程序API和其他组以覆盖新的使用案例。</p>
-<p>CMSIS软件包使用头文件和文档在组件类<b>CMSIS</b> <b>驱动程序</b>下发布API接口。这些头文件是实现标准化外设驱动程序接口的参考。这些实现通常在组件类<b> CMSIS </b> <b>驱动程序</b>下的相关微控制器系列的器件系列包中发布。 设备系列包可以在组件类<b>设备</b>中包含其他接口，以扩展此CMSIS驱动程序规范所涵盖的标准外围驱动程序，并为其他设备指定接口，例如内存总线，GPIO或DMA。</p>
-<p>标准外设驱动器接口将微控制器外设与例如实现通信协议栈，文件系统或图形用户界面的中间件连接。每个外设驱动程序接口可以提供反映设备中相同类型的多个物理接口的多个实例。例如，两个物理SPI接口用于SPI1和SPI2的单独<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>反映。<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>是驱动程序与中间件组件或用户应用程序的接口。</p>
+<div class="textblock"><p>CMSIS 驱动程序规范是一个软件 API，描述中间件协议栈和用户应用程序的外围驱动程序接口。CMSIS 驱动程序 API 被设计为通用的，并且独立于特定的 RTOS，使其可在各种支持的微控制器器件上重复使用。CMSIS 驱动程序 API 涵盖了支持的外设类型的各种用例，但不能考虑每个潜在的用例。随着时间的推移，它将扩展 CMSIS 驱动程序 API 和其他组以覆盖新的使用案例。</p>
+<p>CMSIS 软件包使用头文件和文档在组件类 <b>CMSIS</b> <b>驱动程序</b>下发布 API 接口。这些头文件是实现标准化外设驱动程序接口的参考。这些实现通常在组件类 <b>CMSIS</b> <b>驱动程序</b>下的相关微控制器系列的器件系列包中发布。 设备系列包可以在组件类<b>设备</b>中包含其他接口，以扩展此 CMSIS 驱动程序规范所涵盖的标准外围驱动程序，并为其他设备指定接口，例如内存总线，GPIO 或 DMA。</p>
+<p>标准外设驱动器接口将微控制器外设与例如实现通信协议栈，文件系统或图形用户界面的中间件连接。每个外设驱动程序接口可以提供反映设备中相同类型的多个物理接口的多个实例。例如，两个物理 SPI 接口用于 SPI1 和 SPI2 的单独<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>反映。<a class="el" href="theoryOperation.html#AccessStruct">访问结构</a>是驱动程序与中间件组件或用户应用程序的接口。</p>
 <div class="image">
 <img src="Driver.png" alt="Driver.png"/>
 <div class="caption">
 外设驱动程序接口和中间件</div></div>
-<p>定义了以下CMSIS驱动程序API组：</p>
+<p>定义了以下CMSIS 驱动程序 API 组：</p>
 <ul>
-<li><a class="el" href="group__can__interface__gr.html">CAN</a>: 与CAN总线外设的接口。</li>
-<li><a class="el" href="group__eth__interface__gr.html">Ethernet</a>: 以太网MAC和PHY外设的接口。</li>
+<li><a class="el" href="group__can__interface__gr.html">CAN</a>: 与 CAN 总线外设的接口。</li>
+<li><a class="el" href="group__eth__interface__gr.html">Ethernet</a>: 以太网 MAC 和 PHY 外设的接口。</li>
 <li><a class="el" href="group__i2c__interface__gr.html">I2C</a>: 多主串行单端总线接口驱动程序。</li>
-<li><a class="el" href="group__mci__interface__gr.html">MCI</a>: 用于SD/MMC存储器的存储卡接口。</li>
-<li><a class="el" href="group__nand__interface__gr.html">NAND</a>: NAND闪存接口驱动程序。</li>
+<li><a class="el" href="group__mci__interface__gr.html">MCI</a>: 用于 SD/MMC 存储器的存储卡接口。</li>
+<li><a class="el" href="group__nand__interface__gr.html">NAND</a>: NAND 闪存接口驱动程序。</li>
 <li><a class="el" href="group__flash__interface__gr.html">Flash</a>: 闪存接口驱动程序。</li>
 <li><a class="el" href="group__sai__interface__gr.html">SAI</a>: 串行音频接口驱动器（I2s，PCM，AC'97，TDM，MSB/LSB Justified）。</li>
 <li><a class="el" href="group__spi__interface__gr.html">SPI</a>: 串行外设接口总线驱动程序。</li>
 <li><a class="el" href="group__storage__interface__gr.html">Storage</a>: 存储设备接口驱动。</li>
 <li><a class="el" href="group__usart__interface__gr.html">USART</a>: 通用同步和异步接收器/发送器接口驱动程序。</li>
-<li><a class="el" href="group__usb__interface__gr.html">USB</a>: USB主机和USB设备通信的接口驱动程序。</li>
+<li><a class="el" href="group__usb__interface__gr.html">USB</a>: USB 主机和 USB 设备通信的接口驱动程序。</li>
 </ul>
 <hr/>
 <h2>CMSIS-Driver in ARM::CMSIS Pack </h2>
-<p>以下与CMSIS驱动程序相关的文件存在于<b>ARM::CMSIS</b>包目录中：</p>
+<p>以下与 CMSIS 驱动程序相关的文件存在于 <b>ARM::CMSIS</b> 包目录中：</p>
 <table class="doxtable">
 <tr>
 <th>目录</th><th>内容</th></tr>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">由Arm有限公司于2000年2月22日星期四11:58:38为CMSIS驱动程序生成。保留所有权利。
+    <li class="footer">由 Arm 有限公司于 2000 年 2 月 22 日 星期四 11:58:38 为 CMSIS 驱动程序生成。保留所有权利。
 	<!--
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 

@@ -29,7 +29,7 @@
    <div id="projectname">CMSIS
    &#160;<span id="projectnumber">版本 5.3.0</span>
    </div>
-   <div id="projectbrief">Cortex微控制器软件接口标准</div>
+   <div id="projectbrief">Cortex 微控制器软件接口标准</div>
   </td>
  </tr>
  </tbody>
@@ -72,61 +72,61 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">介绍 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p> <b>Cortex微控制器软件接口标准</b> (CMSIS) 是Cortex®-M系列处理器的独立于供应商的硬件抽象层，并定义了通用工具接口。CMSIS支持一致的设备支持和与处理器和外设的简单软件接口，简化软件重用，减少微控制器开发人员的学习曲线，并缩短新设备的上市时间。</p>
-<p>CMSIS的定义与各种芯片和软件供应商密切合作，提供了一种通用的方法来连接外设，实时操作系统和中间件组件。CMSIS旨在支持来自多个中间件供应商的软件组件的组合。</p>
-<p>CMSIS版本5还支持 <a href="http://www.arm.com/products/processors/instruction-set-architectures/armv8-m-architecture.php" class="el" target="_blank">Armv8-M 架构</a> 包括用于 <a href="http://www.arm.com/products/processors/technologies/trustzone/index.php" class="el" target="_blank">Armv8-M 硬件安全扩展的 TrustZone&reg;</a> 以及 <a href="http://www.arm.com/products/processors/cortex-m/cortex-m23-processor.php" class="el" target="_blank">Cortex-M23</a> 和 <a href="http://www.arm.com/products/processors/cortex-m/cortex-m33-processor.php" class="el" target="_blank">Cortex-M33</a> 处理器。</p>
-<p><a class="anchor" id="CM_Components"></a>CMSIS组件是：</p>
+<div class="textblock"><p> <b>Cortex 微控制器软件接口标准</b> (CMSIS) 是 Cortex®-M 系列处理器的独立于供应商的硬件抽象层，并定义了通用工具接口。CMSIS 支持一致的设备支持和与处理器和外设的简单软件接口，简化软件重用，减少微控制器开发人员的学习曲线，并缩短新设备的上市时间。</p>
+<p>CMSIS 的定义与各种芯片和软件供应商密切合作，提供了一种通用的方法来连接外设，实时操作系统和中间件组件。CMSIS 旨在支持来自多个中间件供应商的软件组件的组合。</p>
+<p>CMSIS 版本 5 还支持 <a href="http://www.arm.com/products/processors/instruction-set-architectures/armv8-m-architecture.php" class="el" target="_blank">Armv8-M 架构</a> 包括用于 <a href="http://www.arm.com/products/processors/technologies/trustzone/index.php" class="el" target="_blank">Armv8-M 硬件安全扩展的 TrustZone&reg;</a> 以及 <a href="http://www.arm.com/products/processors/cortex-m/cortex-m23-processor.php" class="el" target="_blank">Cortex-M23</a> 和 <a href="http://www.arm.com/products/processors/cortex-m/cortex-m33-processor.php" class="el" target="_blank">Cortex-M33</a> 处理器。</p>
+<p><a class="anchor" id="CM_Components"></a>CMSIS 组件是：</p>
 <ul>
-<li><a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a>: Cortex-M处理器内核和外设的API。它为Cortex-M0，Cortex-M0+，Cortex-M3，Cortex-M4，Cortex-M7，Cortex-M23，Cortex-M33，SC000和SC300提供了标准化接口。还包括用于Cortex-M4，Cortex-M7和Cortex-M33 SIMD指令的SIMD固有功能。</li>
+<li><a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a>: Cortex-M 处理器内核和外设的 API。它为 Cortex-M0，Cortex-M0+，Cortex-M3，Cortex-M4，Cortex-M7，Cortex-M23，Cortex-M33，SC000 和 SC300 提供了标准化接口。还包括用于 Cortex-M4，Cortex-M7 和 Cortex-M33 SIMD 指令的 SIMD 固有功能。</li>
 <li><a href="../../Core_A/html/index.html"><b>CMSIS-Core (Cortex-A)</b></a>: API和Cortex-A5 / A7 / A9处理器内核和外设的基本运行时系统。</li>
-<li><a href="../../Driver/html/index.html"><b>CMSIS-Driver</b></a>: 为中间件定义通用外设驱动程序接口，使其可在所支持的设备之间重复使用。该API与RTOS无关，并将微控制器外围设备与实现通信协议栈，文件系统或图形用户界面的中间件相连接。</li>
-<li><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a>: DSP库集合，包含超过60种用于各种数据类型的函数：定点（小数q7，q15，q31）和单精度浮点（32位）。该库适用于所有Cortex-M内核。针对SIMD指令集优化的实现可用于Cortex-M4，Cortex-M7和Cortex-M33。</li>
-<li><a href="../../NN/html/index.html"><b>CMSIS-NN</b></a>: CMSIS-NN是一组高效的神经网络内核，旨在最大限度地提高性能并最大限度地减少Cortex-M处理器内核上的神经网络的内存占用。</li>
-<li><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS v1</b></a>: 实时操作系统的通用API以及基于RTX的参考实现。它提供了一个标准化的编程接口，可以移植到许多RTOS，并支持可在多个RTOS系统上工作的软件组件。</li>
-<li><a href="../../RTOS2/html/index.html"><b>CMSIS-RTOS v2</b></a>: 扩展了CMSIS-RTOS v1，支持Armv8-M体系结构，动态对象创建，多核系统规定以及跨ABI兼容编译器的二进制兼容接口。</li>
-<li><a href="../../Pack/html/index.html"><b>CMSIS-Pack</b></a>: 使用基于XML的软件包描述（PDSC）文件描述文件集合（称为软件包）的用户和设备相关部分，该文件集合包括源代码，头文件和库文件，文档，Flash编程算法，源代码模板和示例项目。开发工具和Web基础架构使用PDSC文件来提取设备参数，软件组件和评估板配置。</li>
-<li><a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a>: 系统视图说明外设。在XML文件中描述设备的外围设备，可用于在调试器或带有外设寄存器和中断定义的头文件中创建外设感知功能。</li>
-<li><a href="../../DAP/html/index.html"><b>CMSIS-DAP</b></a>: 调试访问端口。调试单元的标准化固件，连接到CoreSight调试访问端口。CMSIS-DAP作为单独的软件包进行分发，非常适合在评估板上集成。该组件作为单独的下载提供。</li>
+<li><a href="../../Driver/html/index.html"><b>CMSIS-Driver</b></a>: 为中间件定义通用外设驱动程序接口，使其可在所支持的设备之间重复使用。该 API 与 RTOS 无关，并将微控制器外围设备与实现通信协议栈，文件系统或图形用户界面的中间件相连接。</li>
+<li><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a>: DSP 库集合，包含超过 60 种用于各种数据类型的函数：定点（小数 q7，q15，q31）和单精度浮点（32 位）。该库适用于所有 Cortex-M 内核。针对 SIMD 指令集优化的实现可用于 Cortex-M4，Cortex-M7 和 Cortex-M33。</li>
+<li><a href="../../NN/html/index.html"><b>CMSIS-NN</b></a>: CMSIS-NN 是一组高效的神经网络内核，旨在最大限度地提高性能并最大限度地减少 Cortex-M 处理器内核上的神经网络的内存占用。</li>
+<li><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS v1</b></a>: 实时操作系统的通用 API 以及基于 RTX 的参考实现。它提供了一个标准化的编程接口，可以移植到许多 RTOS，并支持可在多个 RTOS 系统上工作的软件组件。</li>
+<li><a href="../../RTOS2/html/index.html"><b>CMSIS-RTOS v2</b></a>: 扩展了 CMSIS-RTOS v1，支持 Armv8-M 体系结构，动态对象创建，多核系统规定以及跨 ABI 兼容编译器的二进制兼容接口。</li>
+<li><a href="../../Pack/html/index.html"><b>CMSIS-Pack</b></a>: 使用基于 XML 的软件包描述（PDSC）文件描述文件集合（称为软件包）的用户和设备相关部分，该文件集合包括源代码，头文件和库文件，文档，Flash 编程算法，源代码模板和示例项目。开发工具和 Web 基础架构使用 PDSC 文件来提取设备参数，软件组件和评估板配置。</li>
+<li><a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a>: 系统视图说明外设。在 XML 文件中描述设备的外围设备，可用于在调试器或带有外设寄存器和中断定义的头文件中创建外设感知功能。</li>
+<li><a href="../../DAP/html/index.html"><b>CMSIS-DAP</b></a>: 调试访问端口。调试单元的标准化固件，连接到 CoreSight 调试访问端口。CMSIS-DAP 作为单独的软件包进行分发，非常适合在评估板上集成。该组件作为单独的下载提供。</li>
 <li><a href="../../Zone/html/index.html"><b>CMSIS-Zone</b></a>: 系统资源定义和分区。定义描述系统资源的方法并将这些资源分区到多个项目和执行区域。</li>
 </ul>
-<dl class="section note"><dt>注意</dt><dd>有关该软件包的内容的更多信息，请参阅<a class="el" href="index.html#CM_Pack_Content">ARM::CMSIS Pack</a>。</dd></dl>
+<dl class="section note"><dt>注意</dt><dd>有关该软件包的内容的更多信息，请参阅 <a class="el" href="index.html#CM_Pack_Content">ARM::CMSIS Pack</a>。</dd></dl>
 <div class="image">
 <img src="Overview.png" alt="Overview.png"/>
 <div class="caption">
 CMSIS 构成</div></div>
  <h1><a class="anchor" id="Motivation"></a>
-动机</h1>
-<p>CMSIS的创建旨在帮助行业进行标准化。它可以在各种开发工具和微控制器上实现一致的软件层和器件支持。CMSIS不是一个巨大的软件层，它引入了开销并且没有定义标准的外围设备。因此，硅工业可以通过这个通用标准支持各种基于Cortex-M处理器的器件。</p>
-<p>详细的CMSIS的好处是：</p>
+目标</h1>
+<p>CMSIS 的创建旨在帮助行业进行标准化。它可以在各种开发工具和微控制器上实现一致的软件层和器件支持。CMSIS 不是一个巨大的软件层，它引入了开销并且没有定义标准的外围设备。因此，硅工业可以通过这个通用标准支持各种基于 Cortex-M 处理器的器件。</p>
+<p>详细的 CMSIS 的好处是：</p>
 <ul>
-<li>总体CMSIS降低了学习曲线，开发成本和上市时间。开发人员可以通过各种易用，标准化的软件界面更快地编写软件。</li>
+<li>总体 CMSIS 降低了学习曲线，开发成本和上市时间。开发人员可以通过各种易用，标准化的软件界面更快地编写软件。</li>
 <li>一致的软件界面改善了软件的可移植性和可重用性。通用软件库和接口提供一致的软件框架。</li>
 <li>为调试连接，调试外设视图，软件交付和设备支持提供接口，以缩短新微控制器部署的上市时间。</li>
-<li>提供一个编译器独立层，允许使用不同的编译器。CMSIS由主流编译器支持。</li>
-<li>通过调试器和ITM通道的外设信息增强程序调试，实现printf式输出和RTOS内核意识。</li>
-<li>CMSIS以CMSIS-Pack格式提供，可实现快速软件交付，简化更新并实现与开发工具的一致集成。</li>
-<li>CMSIS-Zone将简化系统资源和分区，因为它管理多个处理器，内存区域和外围设备的配置。</li>
+<li>提供一个编译器独立层，允许使用不同的编译器。CMSIS 由主流编译器支持。</li>
+<li>通过调试器和 ITM 通道的外设信息增强程序调试，实现 printf 式输出和 RTOS 内核意识。</li>
+<li>CMSIS 以 CMSIS-Pack 格式提供，可实现快速软件交付，简化更新并实现与开发工具的一致集成。</li>
+<li>CMSIS-Zone 将简化系统资源和分区，因为它管理多个处理器，内存区域和外围设备的配置。</li>
 </ul>
 <h1><a class="anchor" id="CodingRules"></a>
 编码规则</h1>
-<p>CMSIS使用以下基本编码规则和约定：</p>
+<p>CMSIS 使用以下基本编码规则和约定：</p>
 <ul>
-<li>符合ANSI C（C99）和C++（C++ 03）。</li>
-<li>使用<b>&lt;stdint.h&gt;</b>中定义的ANSI C标准数据类型。</li>
+<li>符合 ANSI C（C99）和 C++（C++ 03）。</li>
+<li>使用 <b>&lt;stdint.h&gt;</b> 中定义的 ANSI C 标准数据类型。</li>
 <li>变量和参数具有完整的数据类型。</li>
-<li><em>#define</em>常量的表达式括在括号中。</li>
-<li>符合MISRA 2012（但不声称符合MISRA）。记录MISRA规则违规。</li>
+<li><em>#define</em> 常量的表达式括在括号中。</li>
+<li>符合 MISRA 2012（但不声称符合 MISRA）。记录 MISRA 规则违规。</li>
 </ul>
-<p>另外，CMSIS为标识符推荐以下约定：</p>
+<p>另外，CMSIS 为标识符推荐以下约定：</p>
 <ul>
-<li><b>CAPITAL</b>用于标识内核寄存器，外设寄存器和CPU指令的名称。</li>
-<li><b>CamelCase</b>名称来标识函数名称和中断函数。</li>
-<li><b>Namespace_</b> 前缀避免与用户标识冲突并提供功能组（即用于外设，RTOS或DSP库）。</li>
+<li><b>CAPITAL</b> 用于标识内核寄存器，外设寄存器和 CPU 指令的名称。</li>
+<li><b>CamelCase</b> 名称来标识函数名称和中断函数。</li>
+<li><b>Namespace_</b> 前缀避免与用户标识冲突并提供功能组（即用于外设，RTOS 或 DSP 库）。</li>
 </ul>
-<p>CMSIS记录在源文件中：</p>
+<p>CMSIS 记录在源文件中：</p>
 <ul>
-<li>使用C或C++风格的注释。</li>
-<li>符合Doxygen标准的<b>功能注释</b>提供：<ul>
+<li>使用 C 或 C++ 风格的注释。</li>
+<li>符合 Doxygen 标准的<b>功能注释</b>提供：<ul>
 <li>简要功能概述。</li>
 <li>功能的详细说明。</li>
 <li>详细的参数说明。</li>
@@ -134,7 +134,7 @@ CMSIS 构成</div></div>
 </ul>
 </li>
 </ul>
-<p>Doxygen注释示例：</p>
+<p>Doxygen 注释示例：</p>
 <pre class="fragment">/** 
  * @brief  Enable Interrupt in NVIC Interrupt Controller
  * @param  IRQn  interrupt number that specifies the interrupt
@@ -144,27 +144,27 @@ CMSIS 构成</div></div>
  */
 </pre><h1><a class="anchor" id="Validation"></a>
 验证</h1>
-<p>使用主流编译器验证CMSIS版本5的各个组件。为了获得多样化的覆盖范围，Arm在各种测试中使用Arm Compiler v5（基于EDG前端），Arm Compiler v6（基于LLVM前端）和GCC Compiler。对于每个组件，<b>“验证”</b>部分描述了各种验证的范围。</p>
-<p>CMSIS组件与一系列C和C++语言标准兼容。CMSIS组件符合Arm架构<a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ihi0036b/index.html">应用程序二进制接口（ABI）</a> (例外 CMSIS-RTOS v1)。这确保C API接口支持各种工具链之间的互操作。</p>
-<p>由于CMSIS定义了扩展到各种处理器和设备的API接口和函数，因此运行时测试覆盖范围有限。但是，使用专用测试套件验证了几个组件。</p>
-<p>使用PC-Lint检查CMSIS源代码是否符合MISRA C：2012标准。MISRA偏差记录在合理的努力中，但是Arm没有声明MISRA合规性，因为如今没有指导性执行计划。由于CMSIS源代码存在与C语言标准不兼容的风险，特别是各种C编译器可能产生的警告，因此不会检查CMSIS源代码。</p>
+<p>使用主流编译器验证 CMSIS 版本 5 的各个组件。为了获得多样化的覆盖范围，Arm 在各种测试中使用 Arm Compiler v5（基于 EDG 前端），Arm Compiler v6（基于 LLVM 前端）和 GCC Compiler。对于每个组件，<b>“验证”</b>部分描述了各种验证的范围。</p>
+<p>CMSIS 组件与一系列 C 和 C++ 语言标准兼容。CMSIS 组件符合 Arm 架构<a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ihi0036b/index.html">应用程序二进制接口（ABI）</a> (例外 CMSIS-RTOS v1)。这确保 C API 接口支持各种工具链之间的互操作。</p>
+<p>由于 CMSIS 定义了扩展到各种处理器和设备的 API 接口和函数，因此运行时测试覆盖范围有限。但是，使用专用测试套件验证了几个组件。</p>
+<p>使用 PC-Lint 检查 CMSIS 源代码是否符合 MISRA C：2012 标准。MISRA 偏差记录在合理的努力中，但是 Arm 没有声明 MISRA 合规性，因为如今没有指导性执行计划。由于 CMSIS 源代码存在与 C 语言标准不兼容的风险，特别是各种 C 编译器可能产生的警告，因此不会检查 CMSIS 源代码。</p>
 <h1><a class="anchor" id="License"></a>
 许可证</h1>
-<p>CMSIS由Apache根据Apache 2.0许可免费提供。查看 <a href="LICENSE.txt">Apache 2.0许可证</a>。</p>
+<p>CMSIS 由 Apache 根据 Apache 2.0 许可免费提供。查看 <a href="LICENSE.txt">Apache 2.0 许可证</a>。</p>
 <h1><a class="anchor" id="CM_Pack_Content"></a>
 ARM::CMSIS 包</h1>
-<p><b>ARM::CMSIS</b>包包含以下内容：</p>
+<p><b>ARM::CMSIS</b> 包包含以下内容：</p>
 <table class="doxtable">
 <tr>
 <th align="left">文件/目录</th><th align="left">内容</th></tr>
 <tr>
-<td align="left"><b>ARM.CMSIS.pdsc</b> </td><td align="left">软件包描述文件采用CMSIS-Pack格式。</td></tr>
+<td align="left"><b>ARM.CMSIS.pdsc</b> </td><td align="left">软件包描述文件采用 CMSIS-Pack 格式。</td></tr>
 <tr>
-<td align="left"><b>LICENSE.txt</b> </td><td align="left">CMSIS许可协议（Apache 2.0）</td></tr>
+<td align="left"><b>LICENSE.txt</b> </td><td align="left">CMSIS 许可协议（Apache 2.0）</td></tr>
 <tr>
-<td align="left"><b>CMSIS</b> </td><td align="left"><a class="el" href="index.html#CM_Components">CMSIS组件</a> (见下文)</td></tr>
+<td align="left"><b>CMSIS</b> </td><td align="left"><a class="el" href="index.html#CM_Components">CMSIS 组件</a> (见下文)</td></tr>
 <tr>
-<td align="left"><b>Device</b> </td><td align="left">基于ARM Cortex-M处理器的CMSIS参考实现</td></tr>
+<td align="left"><b>Device</b> </td><td align="left">基于 ARM Cortex-M 处理器的 CMSIS 参考实现</td></tr>
 </table>
 <h2>CMSIS 目录</h2>
 <table class="doxtable">
@@ -173,32 +173,32 @@ ARM::CMSIS 包</h1>
 <tr>
 <td align="left"><b>Documentation</b> </td><td align="left">本文档</td></tr>
 <tr>
-<td align="left"><b>Core</b> </td><td align="left">用于<a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a>相关文件的用户代码模板，在ARM.CMSIS.PDSC中引用</td></tr>
+<td align="left"><b>Core</b> </td><td align="left">用于 <a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a> 相关文件的用户代码模板，在 ARM.CMSIS.PDSC 中引用</td></tr>
 <tr>
-<td align="left"><b>Core_A</b> </td><td align="left">用于<a href="../../Core_A/html/index.html"><b>CMSIS-Core (Cortex-A)</b></a>相关文件的用户代码模板，在ARM.CMSIS.PDSC中引用</td></tr>
+<td align="left"><b>Core_A</b> </td><td align="left">用于 <a href="../../Core_A/html/index.html"><b>CMSIS-Core (Cortex-A)</b></a> 相关文件的用户代码模板，在 ARM.CMSIS.PDSC 中引用</td></tr>
 <tr>
-<td align="left"><b>DAP</b> </td><td align="left"><a href="../../DAP/html/index.html"><b>CMSIS-DAP</b></a>调试访问端口源代码和参考实现</td></tr>
+<td align="left"><b>DAP</b> </td><td align="left"><a href="../../DAP/html/index.html"><b>CMSIS-DAP</b></a> 调试访问端口源代码和参考实现</td></tr>
 <tr>
-<td align="left"><b>Driver</b> </td><td align="left"><a href="../../Driver/html/index.html"><b>CMSIS-Driver</b></a>外围接口API的头文件</td></tr>
+<td align="left"><b>Driver</b> </td><td align="left"><a href="../../Driver/html/index.html"><b>CMSIS-Driver</b></a> 外围接口 API 的头文件</td></tr>
 <tr>
-<td align="left"><b>DSP_Lib</b> </td><td align="left"><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a>软件库源代码</td></tr>
+<td align="left"><b>DSP_Lib</b> </td><td align="left"><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a> 软件库源代码</td></tr>
 <tr>
-<td align="left"><b>NN</b> </td><td align="left"><a href="../../NN/html/index.html"><b>CMSIS-NN</b></a>软件库源代码</td></tr>
+<td align="left"><b>NN</b> </td><td align="left"><a href="../../NN/html/index.html"><b>CMSIS-NN</b></a> 软件库源代码</td></tr>
 <tr>
-<td align="left"><b>Include</b> </td><td align="left">包含<a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a> 和 <a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a>的头文件</td></tr>
+<td align="left"><b>Include</b> </td><td align="left">包含 <a href="../../Core/html/index.html"><b>CMSIS-Core (Cortex-M)</b></a> 和 <a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a> 的头文件</td></tr>
 <tr>
-<td align="left"><b>Lib</b> </td><td align="left"><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a>为ARMCC和GCC生成库</td></tr>
+<td align="left"><b>Lib</b> </td><td align="left"><a href="../../DSP/html/index.html"><b>CMSIS-DSP</b></a> 为 ARMCC 和 GCC 生成库</td></tr>
 <tr>
-<td align="left"><b>Pack</b> </td><td align="left"><a href="../../Pack/html/pack_Example.html"><b>CMSIS-Pack</b></a>示例</td></tr>
+<td align="left"><b>Pack</b> </td><td align="left"><a href="../../Pack/html/pack_Example.html"><b>CMSIS-Pack</b></a> 示例</td></tr>
 <tr>
-<td align="left"><b>RTOS</b> </td><td align="left"><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS 版本 1</b></a>以及RTX参考实现</td></tr>
+<td align="left"><b>RTOS</b> </td><td align="left"><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS 版本 1</b></a> 以及 RTX 参考实现</td></tr>
 <tr>
-<td align="left"><b>RTOS2</b> </td><td align="left"><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS 版本 2</b></a>以及RTX参考实现</td></tr>
+<td align="left"><b>RTOS2</b> </td><td align="left"><a href="../../RTOS/html/index.html"><b>CMSIS-RTOS 版本 2</b></a> 以及 RTX 参考实现</td></tr>
 <tr>
-<td align="left"><b>SVD</b> </td><td align="left"><a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a>示例</td></tr>
+<td align="left"><b>SVD</b> </td><td align="left"><a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a> 示例</td></tr>
 <tr>
 <td align="left"><b>Utilities</b> </td><td align="left">PACK.xsd (<a href="../../Pack/html/pack_Example.html"><b>CMSIS-Pack</b></a> 模式文件), PackChk.exe (软件包检查工具), <br/>
- CMSIS-SVD.xsd (<a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a> 模式文件), SVDConv.exe (用于SVD文件的转换工具) </td></tr>
+ CMSIS-SVD.xsd (<a href="../../SVD/html/index.html"><b>CMSIS-SVD</b></a> 模式文件), SVDConv.exe (用于 SVD 文件的转换工具) </td></tr>
 </table>
 <hr/>
  </div></div><!-- contents -->
@@ -206,7 +206,7 @@ ARM::CMSIS 包</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">由Arm Ltd.于2012年2月22日11:58:48为CMSIS生成。保留所有权利。
+    <li class="footer">由 Arm Ltd.于 2012 年 2 月 22 日 11:58:48 为 CMSIS 生成。保留所有权利。
 	<!--
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 
